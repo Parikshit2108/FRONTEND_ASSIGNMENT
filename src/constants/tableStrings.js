@@ -1,4 +1,3 @@
-// src/constants/tableStrings.js
 
 export const TABLE_STRINGS = {
   SETTINGS: "Settings",

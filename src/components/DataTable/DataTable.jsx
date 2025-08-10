@@ -23,7 +23,7 @@ import {
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
-import {FaEye, FaEyeSlash, FaCog } from "react-icons/fa";
+import { FaEyeSlash, FaCog, FaMinusSquare } from "react-icons/fa";
 import ReusableButton from "@component/ReusableButton/ReusableButton";
 import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 import { TABLE_STRINGS } from "@constants/tableStrings";
@@ -241,7 +241,7 @@ export default function DataTable({
                             className={`p-1 rounded ${column.getIsVisible() ? "text-blue-600" : "text-gray-400"}`}
                             title={column.getIsVisible() ? TABLE_STRINGS.HIDE_COLUMN : TABLE_STRINGS.SHOW_COLUMN}
                         >
-                            {column.getIsVisible() ? <FaEye /> : <FaEyeSlash />}
+                            {column.getIsVisible() ? <FaMinusSquare /> : <FaEyeSlash />}
                         </button>
 
                         {enablePinning && canPin && pinned !== "left" && (

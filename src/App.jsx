@@ -10,7 +10,7 @@ export default function App() {
       <DataTable
         columns={columns}
         data={data}
-        title={"TanStack Virtualized Table"}
+        title="Virtualized Table"
         enableVirtualization={true}
         enableColumnResizing={true}
         enablePinning={true}

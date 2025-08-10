@@ -5,10 +5,11 @@ export function makeData(rowCount = 2000, colCount = 80) {
     header: `Col ${i + 1}`,
     accessorKey: `col${i + 1}`,
   }));
+  const colKeys = columns.map(col => col.accessorKey);
   const data = Array.from({ length: rowCount }, () => {
     const row = {};
     for (let i = 0; i < colCount; i++) {
-      row[`col${i + 1}`] = faker.word.noun();
+      row[colKeys[i]] = faker.word.noun();
     }
     return row;
   });
