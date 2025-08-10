@@ -98,6 +98,8 @@ npm run dev
 ```
 
 The app will be available at [http://localhost:5173](http://localhost:5173).
+GitHub Repo Link => https://github.com/Parikshit2108/FRONTEND_ASSIGNMENT
+App is live on =>   https://virtualizedtanstacktable.netlify.app/
 
 ### 3. Build for production
 
